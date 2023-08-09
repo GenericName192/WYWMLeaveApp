@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from views import dashBoard, companyHolidays, leaveApproval, leaveBalance, leaveRequest, profileSettings, loginUser
+from .views import dashBoard, companyHolidays, leaveApproval, leaveBalance, leaveRequest, profileSettings, loginUser
 
 urlpatterns = [
     path("admin/", admin.site.urls),
