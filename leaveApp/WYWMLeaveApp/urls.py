@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from .views import dashBoard, companyHolidays, leaveApproval, leaveBalance, leaveRequest, profileSettings, loginUser
+from .views import dashBoard, companyHolidays, leaveApproval, leaveBalance, leaveRequest, profileSettings, loginUser, logOutUser
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -10,5 +10,6 @@ urlpatterns = [
     path("leave/balance", leaveBalance, name="leaveBalance"),
     path("leave/request", leaveRequest, name="leaveRequest"),
     path("profileSettings", profileSettings, name="profileSettings"),
-    path("login", loginUser, name="loginUser"),
+    path("loginUser", loginUser, name="loginUser"),
+    path("logoutUser", logOutUser, name="logOutUser"),
 ]

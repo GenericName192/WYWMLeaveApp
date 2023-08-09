@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 
 # Create your views here.
 def dashBoard(request):
@@ -21,3 +21,6 @@ def profileSettings(request):
 
 def loginUser(request):
     return render(request, "WYWMLeaveApp/login.html")
+
+def logOutUser(request):
+    return redirect("dashBoard")
